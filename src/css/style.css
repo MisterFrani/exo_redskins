@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;600&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --red-clr: #7D0C01;
+    --white-clr: #ffffff;
+    --black-clr: #000000;
+    --shadow:
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.content {
+    width: 400px;
+    margin-inline: auto;
+    height: 100vh;
+}
+
+.header__section {
+    background: var(--red-clr);
+    padding: 16px 0;
+}
+
+.header__section .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.header__section--logo {
+    width: 140px;
+    height: 20px
+}
+
+.header__section a {
+    color: var(--white-clr);
+}
+
+.header__section--close {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.main__section--heading {
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.h1 {
+    font-size: 150%;
+    text-transform: uppercase;
+}
+
+.main__section--hero {
+    position: relative;
+    height: 50vh;
+    background: rgba(0, 0, 0, 0.01);
+    color: var(--white-clr);
+}
+
+.main__section--hero-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.main__section--hero .container {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    height: 94%;
+}
+
+.heading-title {
+    font-weight: 600;
+    font-size: 197%;
+    width: 70%;
+    margin-bottom: 3%;
+    text-transform: uppercase;
+    text-shadow: -3px -1px 8px rgba(0, 0, 0, 0.6);
+}
+
+.main__section--hero-heading {
+    margin-bottom: 18px;
+}
+
+.heading-price {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+.border-top {
+    border-top: 2px solid var(--white-clr);
+    padding-top: 3%;
+}
+
+.main__section--btn {
+    text-align: center;
+}
+
+.btn {
+    padding: 4% 22%;
+    background: var(--red-clr);
+    color: var(--white-clr);
+    border: 0;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.75);
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background-color: var(--white-clr);
+    color: var(--red-clr);
+}
+
+.bottom__section {
+    margin-top: 16px;
+}
+
+.bottom__section .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.bottom__section .article-btn {
+    cursor: pointer;
+    width: 32%;
+    height: 16vh;
+    border: none;
+    box-shadow: 0px 8px 9px 0px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 0px 8px 9px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 8px 9px 0px rgba(0,0,0,0.25);
+    transition: all 0.2s ease-in-out;
+}
+.bottom__section .article-btn:hover {
+    transform: scale(1.05);
+}
+
+@media (min-width:667px) {
+
+    .content {
+        width: 260px;
+        height: 100vh;
+    }
+    .header__section {
+        padding: 8px 0;
+    }
+    .header__section--logo {
+        width: 110px;
+        height: 18px
+    }
+    .h1 {font-size: 110%; font-weight: bold;}
+    .heading-title {
+        font-weight: 600;
+        font-size: 197%;
+        width: 70%;
+        margin-bottom: 3%;
+        text-transform: uppercase;
+        text-shadow: -3px -1px 8px rgba(0, 0, 0, 0.6);
+    }
+    
+    .main__section--hero-heading {
+        margin-bottom: 19px;
+    }
+    
+    .heading-price {
+
+        font-size: 90%;
+    }
+    .heading-title  {
+        font-size: 150%;
+    }
+
+    
+}
+
