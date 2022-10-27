@@ -76,6 +76,7 @@ a {
 .h1 {
     font-size: 150%;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 .main__section--hero {
@@ -186,7 +187,7 @@ a {
         width: 110px;
         height: 18px
     }
-    .h1 {font-size: 110%; font-weight: bold;}
+    .h1 {font-size: 110%;}
     .heading-title {
         font-weight: 600;
         font-size: 197%;
